@@ -9,6 +9,11 @@ class Comment extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'post_id',
+        'commenter_name',
+        'comment',
+    ];
     // A comment has 1 post
     public function post()
     {
